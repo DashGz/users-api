@@ -19,7 +19,7 @@ public class SiteServiceUrlImp implements IUserService{
         Site[] ordenado = null;
 
         try {
-            URL url = new URL("http://localhost:8083/sites");
+            URL url = new URL("http://localhost:5000/sites");
             try {
                 URLConnection urlConnection = url.openConnection();
                 urlConnection.setRequestProperty("Accept", "application/json");
@@ -55,7 +55,7 @@ public class SiteServiceUrlImp implements IUserService{
         Category[] ordenado2 = null;
 
         try {
-            URL url2 = new URL("http://localhost:8083/sites/" + id + "/categories");
+            URL url2 = new URL("http://localhost:5000/sites/" + id + "/categories");
             try {
                 URLConnection urlConnection2 = url2.openConnection();
                 urlConnection2.setRequestProperty("Accept", "application/json");
